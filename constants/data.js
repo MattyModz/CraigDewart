@@ -3,7 +3,7 @@ const userData = {
   name: "Matthew Wynne",
   designation: "Jamstack web dev",
   avatarUrl: "/profile-pic.png",
-  email: "",
+  email: "matt-wynne07@hotmail.co.uk",
   phone: "",
   address: "",
   projects: [
