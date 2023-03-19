@@ -50,7 +50,7 @@ export default Hero;
 function This(userDatainst) {
   return (
     <>
-      <div className="lg:flex text-black w-full flex-cols-2 justify-center items-start overflow-hidden px-4   ">
+      <div className="lg:flex text-black w-full flex-cols-2 justify-center items-start overflow-hidden px-4 dark:text-gray-100  ">
         <div className="w-full md:w-1/2 mx-auto text-center md:text-left ">
           <div className="  lg:py-24 lg:px-8">
             <div className=" lg:flex lg:justify-end">

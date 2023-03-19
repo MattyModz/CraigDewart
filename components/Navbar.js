@@ -50,7 +50,7 @@ export default function Navbar() {
   return (
     <div
       style={{ zIndex: 1000 }}
-      className={`lg:px-48 px-4 sticky top-0   items-center justify-between  ${bgColor} text-black ${
+      className={`lg:px-48 px-4 sticky top-0 dark:bg-gray-900  items-center justify-between  ${bgColor} text-black ${
         scrollY > 0 ? "shadow-md" : ""
       }`}
     >

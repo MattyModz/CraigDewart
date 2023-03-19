@@ -4,7 +4,7 @@ import userData from "../constants/data";
 import Link from "next/link";
 function Intro() {
   return (
-    <div className="bg-[#FBFAF9]  grid lg:grid-cols-2 py-24 px-8">
+    <div className="bg-[#FBFAF9] dark:bg-gray-900 dark:text-gray-100 grid lg:grid-cols-2 py-24 px-8">
       <div className=" lg:flex lg:justify-end">
         {" "}
         <div className="items ">
