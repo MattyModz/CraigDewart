@@ -10,7 +10,7 @@ function Intro() {
         <div className="items ">
           <div className="flex ">
             <Image
-              src={"/Avatarimage.png"}
+              src={"/AvatarImage.png"}
               height={100}
               width={100}
               className="rounded-full "
