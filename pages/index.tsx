@@ -12,7 +12,7 @@ export default function Home({ repositories }) {
   return (
     <ContainerBlock
       title="Matthew Wynne.dev"
-      description="Matthew wynn personal portfolio site."
+      description="Matthew wynne personal portfolio site."
     >
       <Intro />
       <Hero />

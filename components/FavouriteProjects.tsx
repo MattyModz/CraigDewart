@@ -40,11 +40,11 @@ export default function FavouriteProjects() {
           >
             <div className="relative overflow-hidden">
               <img
-                src="SeoForHirePorfolio.jpg"
+                src="mcphero.png"
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-gray-500 rounded-md px-2">
                 SEOForHire
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
@@ -64,7 +64,7 @@ export default function FavouriteProjects() {
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-gray-500 rounded-md px-2">
                 Link City
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
@@ -80,11 +80,11 @@ export default function FavouriteProjects() {
             <div className="relative overflow-hidden shadow-2xl">
               {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
               <img
-                src="/MCPport.png"
+                src="/mcphero.png"
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl"
               />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-gray-500 rounded-md px-2">
                 MyContenPal
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">

@@ -15,12 +15,12 @@ const userData = {
     {
       title: "My content Pal",
       link: "https://www.mycontentpal.io",
-      imgUrl: "/MCPport.png",
+      imgUrl: "/mcphero.png",
     },
     {
       title: "Seo for hire",
       link: "https://www.seoforhire.co",
-      imgUrl: "/SeoForHirePorfolio.jpg",
+      imgUrl: "/SFH.png",
     },
   ],
   about: {
@@ -82,9 +82,9 @@ const userData = {
     "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
   socialLinks: {
     instagram: "https://instagram.com/",
-    twitter: "https://twitter.com/craigd0412",
-    linkedin: "https://uk.linkedin.com/in/craig-dewart-6a6342122",
-    github: "https://github.com/",
+    twitter: "https://twitter.com/",
+    linkedin: "https://www.linkedin.com/in/matthew-wynne-0aa635220/",
+    github: "https://github.com/MattyModz",
     facebook: "https://facebook.com/",
   },
 };
