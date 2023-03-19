@@ -31,7 +31,11 @@
     "app/page.tsx",
     "app/head.tsx",
     "src/componants/Table.js",
-    "componants/prod/Config.tsx"
+    "componants/prod/Config.tsx",
+    "components/Projects.js",
+    "components/LatestCode.js",
+    "components/ContainerBlock.js",
+    "components/LatestCode.js"
   ],
   "exclude": ["node_modules"]
 }

@@ -47,12 +47,12 @@ function Hero() {
 
 export default Hero;
 
-function This(userDatainst, av) {
+function This(userDatainst) {
   return (
     <>
-      <div className="lg:flex text-black w-full flex-cols-2 justify-center items-start overflow-hidden    ">
+      <div className="lg:flex text-black w-full flex-cols-2 justify-center items-start overflow-hidden px-4   ">
         <div className="w-full md:w-1/2 mx-auto text-center md:text-left ">
-          <div className="  py-24 lg:px-8">
+          <div className="  lg:py-24 lg:px-8">
             <div className=" lg:flex lg:justify-end">
               {" "}
               <div className="items ">
@@ -65,10 +65,10 @@ function This(userDatainst, av) {
                 />
               </div> */}
                 icon
-                <h1 className="font-bold text-4xl py-4">
+                <h1 className="font-bold text-4xl py-4 text-left">
                   Three JS product configurator
                 </h1>
-                <p className="">NextJS Sanity & Three JS.</p>
+                <p className="text-left">NextJS Sanity & Three JS.</p>
                 <div className="flex  py-4 ">
                   {" "}
                   <a
@@ -87,7 +87,7 @@ function This(userDatainst, av) {
                     </svg>
                   </a>
                 </div>
-                <p>
+                <p className="text-left">
                   Initial concept piece demonstrating core functionality <br />{" "}
                   to a headless eccomerce product configurator
                 </p>
@@ -119,8 +119,15 @@ function This(userDatainst, av) {
           </div>
         </div>
         <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
-          <div className="hidden lg:block relative w-full md:w-1/2 ">
-            <img src={av} alt="avatar" className=" shadow" />
+          <div className=" lg:block relative w-full  ">
+            {" "}
+            <Image
+              src={"/prodcust.gif"}
+              alt="avatar"
+              className=" shadow flex justify-center   mx-auto "
+              width={1000}
+              height={500}
+            />
             <div className="flex flex-row justify-between mt-4">
               <div className="flex flex-row space-x-4">
                 <svg
