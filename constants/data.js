@@ -1,8 +1,8 @@
 const userData = {
   githubUsername: "MattyModz",
-  name: "Craig Dewart",
-  designation: "SEO specialist",
-  avatarUrl: "/craig.jpg",
+  name: "Matthew Wynne",
+  designation: "Jamstack web dev",
+  avatarUrl: "/profile-pic.png",
   email: "",
   phone: "",
   address: "",

@@ -4,8 +4,9 @@ import ContainerBlock from "../components/ContainerBlock";
 import FavouriteProjects from "../components/FavouriteProjects";
 import LatestCode from "../components/LatestCode";
 import Hero from "../components/Hero";
-import getLatestRepos from "@lib/getLatestRepos";
-import userData from "@constants/data";
+import getLatestRepos from "../lib/getLatestRepos";
+import userData from "../constants/data";
+import Intro from "../components/intro";
 
 export default function Home({ repositories }) {
   return (
@@ -13,8 +14,10 @@ export default function Home({ repositories }) {
       title="Craig Dewart- SEO, Content, Link Building"
       description="Craig Dewart Personal portfolio site."
     >
+      <Intro />
       <Hero />
       <FavouriteProjects />
+      <LatestCode repositories={repositories} />
     </ContainerBlock>
   );
 }
@@ -32,5 +35,3 @@ export const getServerSideProps = async () => {
     },
   };
 };
-
-//  <LatestCode repositories={repositories} />;

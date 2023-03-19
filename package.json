@@ -8,16 +8,30 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.8",
+    "@react-three/drei": "^9.40.4",
+    "@react-three/fiber": "^8.12.0",
+    "@sanity/vision": "^3.7.0",
     "axios": "^0.21.1",
-    "next": "10.x",
-    "next-themes": "0.0.15",
-    "react": "17.x",
-    "react-dom": "17.x",
-    "react-rough-notation": "^1.0.1"
+    "framer-motion": "^6.3.6",
+    "next": "latest",
+    "next-themes": "0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-rough-notation": "^1.0.3",
+    "sanity": "^3.0.0",
+    "swiper": "^9.1.1",
+    "three": "^0.146.0"
   },
   "devDependencies": {
+    "@sanity/eslint-config-studio": "^2.0.1",
+    "@types/node": "^18.11.3",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "autoprefixer": "^10.3.1",
     "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.7"
+    "styled-components": "^5.3.9",
+    "tailwindcss": "^2.2.7",
+    "typescript": "^4.4.3"
   }
 }

@@ -1,30 +1,25 @@
 import React from "react";
+import Image from "next/image";
 import userData from "../constants/data";
-
-export default function Footer() {
+import Link from "next/link";
+function Intro() {
   return (
-    <div className="bg-[#F1F1F1] dark:bg-gray-900">
-      <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
-        <div className="h-0.5 w-full bg-white dark:bg-gray-700"></div>
-        <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
-          <div>
-            <p>&copy; Matthew Wynne. All Rights Reserved.</p>
+    <div className="bg-[#FBFAF9]  grid lg:grid-cols-2 py-24 px-8">
+      <div className=" lg:flex lg:justify-end">
+        {" "}
+        <div className="items ">
+          <div className="flex ">
+            <Image
+              src={"/Avatarimage.png"}
+              height={100}
+              width={100}
+              className="rounded-full "
+            />
           </div>
-          <div>
-            {/* Support me by keeping this in the footer, please. :) */}
-            <p>
-              Developed by
-              <div className="inline-block transform hover:scale-110 hover:-rotate-3 transition duration-300">
-                <a
-                  className="hover:bg-red-500 rounded-md px-2 py-1  hover:text-gray-50"
-                  href="https://manuarora.in"
-                >
-                  Matt
-                </a>
-              </div>
-            </p>
-          </div>
-          <div className="space-x-4 flex flex-row items-center">
+          <h1 className="font-bold text-4xl py-4">Fullstack on the Jamstack</h1>
+          <p className="">Hi, i'm Matt, a fullstack web developer.</p>
+          <div className="flex  py-4 ">
+            {" "}
             <a
               href={userData.socialLinks.instagram}
               className="text-base font-normal text-gray-600 dark:text-gray-300"
@@ -42,7 +37,7 @@ export default function Footer() {
             </a>
             <a
               href={userData.socialLinks.twitter}
-              className="text-base font-normal text-gray-600 dark:text-gray-300"
+              className="text-base font-normal text-gray-600 dark:text-gray-300 px-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,8 +66,37 @@ export default function Footer() {
               </svg>
             </a>
           </div>
+          <p>
+            NextJS & Sanity Developer, bringing aesthetic design & <br />{" "}
+            business operations together with NextJS & Sanity.
+          </p>
+          <div className="w-1/2 py-4">
+            {" "}
+            <Link href="/projects">
+              <a className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700 ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-arrow-up-right-square"
+                  stroke="4"
+                  strokeWidth="4"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"
+                  />
+                </svg>
+                <p>Learn more</p>
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
   );
 }
+
+export default Intro;
