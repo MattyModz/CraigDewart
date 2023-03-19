@@ -67,13 +67,14 @@ function Intro() {
             </a>
           </div>
           <p>
-            NextJS & Sanity Developer, bringing aesthetic design & <br />{" "}
-            business operations together with NextJS & Sanity.
+            NextJS & Sanity Developer, bringing aesthetic design &{" "}
+            <br className="lg:block hidden" /> business operations together with
+            NextJS & Sanity.
           </p>
           <div className="w-1/2 py-4">
             {" "}
             <Link href="/projects">
-              <a className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700 ">
+              <a className="mb-20 md:mb-0 lg:px-8 px-4 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

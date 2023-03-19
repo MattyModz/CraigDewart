@@ -11,8 +11,8 @@ import Intro from "../components/intro";
 export default function Home({ repositories }) {
   return (
     <ContainerBlock
-      title="Craig Dewart- SEO, Content, Link Building"
-      description="Craig Dewart Personal portfolio site."
+      title="Matthew Wynne.dev"
+      description="Matthew wynn personal portfolio site."
     >
       <Intro />
       <Hero />
