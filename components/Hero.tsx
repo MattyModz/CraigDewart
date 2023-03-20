@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from "react";
-import { Pagination, Autoplay } from "swiper";
+import { Pagination, Autoplay, Grid } from "swiper";
 import { motion } from "framer-motion";
 import Link from "next/link";
 // import Bottombar from "../Footer/bottombar";
@@ -145,11 +145,6 @@ function This(userDatainst) {
                       <p>Learn more</p>
                     </a>
                   </Link>
-                  <ul className="flex list-none lg:py-8 -mt-10 m-0">
-                    <li className="h-3 w-3 rounded-full bg-blue-500 mr-2"></li>
-                    <li className="h-3 w-3 rounded-full bg-gray-400 mr-2"></li>
-                    <li className="h-3 w-3 rounded-full bg-gray-400"></li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -307,11 +302,6 @@ function This1(userDatainst) {
                       <p>Learn more</p>
                     </a>
                   </Link>
-                  <ul className="flex list-none lg:py-8 -mt-10 m-0">
-                    <li className="h-3 w-3 rounded-full bg-gray-400 mr-2"></li>
-                    <li className="h-3 w-3 rounded-full bg-blue-500 mr-2"></li>
-                    <li className="h-3 w-3 rounded-full bg-gray-400"></li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -460,11 +450,6 @@ function This2(userDatainst) {
                       <p>Learn more</p>
                     </a>
                   </Link>
-                  <ul className="flex list-none lg:py-8 -mt-10 m-0">
-                    <li className="h-3 w-3 rounded-full bg-gray-400 mr-2"></li>
-                    <li className="h-3 w-3 rounded-full bg-gray-400 mr-2"></li>
-                    <li className="h-3 w-3 rounded-full bg-blue-500"></li>
-                  </ul>
                 </div>
               </div>
             </div>
