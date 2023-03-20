@@ -38,8 +38,8 @@ function Intro() {
           </div>
           <p>
             NextJS & Sanity Developer, bringing aesthetic design &{" "}
-            <br className="lg:block hidden" /> business operations together with
-            NextJS & Sanity.
+            <br className="lg:block hidden" /> the power of sanity to
+            supercharge business web content experience
           </p>
           <div className="w-1/2 py-4">
             {" "}

@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import ContainerBlock from "../components/ContainerBlock";
-export default function test() {
+export default function productconfig() {
   return (
     <>
       <ContainerBlock
-        title="Lead generation CRUD dashboard"
+        title="product-config"
         description="Matthew wynne personal portfolio site."
       >
         <div className="h-screen bg-[#FBFAF9] py-24 px-4">
