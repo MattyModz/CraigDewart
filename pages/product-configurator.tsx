@@ -3,7 +3,6 @@ import Image from "next/image";
 import ContainerBlock from "../components/ContainerBlock";
 import Experience from "../components/Expirience";
 import Link from "next/link";
-import userData from "../constants/data";
 
 import Strategy from "../components/Multi-step-form";
 export default function productconfig() {
