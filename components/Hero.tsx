@@ -61,7 +61,7 @@ function This(userDatainst) {
               {" "}
               <div className="items ">
                 <div className="  rounded-xl ">
-                  <div className="flex lg:py-0 py-2">
+                  <div className="flex lg:py-0 py-4">
                     <p className="bg-gray-100 px-3 rounded-xl font-semibold dark:text-gray-900">
                       Concept
                     </p>
@@ -202,7 +202,7 @@ function This1(userDatainst) {
                   className="rounded-full "
                 />
               </div> */}
-                <div className="flex lg:py-0 py-2">
+                <div className="flex lg:py-0 py-4">
                   <p className="bg-gray-100 px-3 rounded-xl font-semibold dark:text-gray-900">
                     Production
                   </p>
@@ -361,7 +361,7 @@ function This2(userDatainst) {
                   className="rounded-full "
                 />
               </div> */}
-                <div className="flex lg:py-0 py-2">
+                <div className="flex lg:py-0 py-4">
                   <p className="bg-gray-100 px-3 rounded-xl font-semibold dark:text-gray-900">
                     Production
                   </p>

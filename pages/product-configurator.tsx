@@ -9,7 +9,7 @@ export default function productconfig() {
   return (
     <>
       <div className="grid lg:grid-cols-2">
-        <div className="bg-[#FBFAF9]">
+        <div className="bg-[#FBFAF9] dark:bg-gray-900">
           {" "}
           <Text />
         </div>
@@ -28,7 +28,7 @@ export default function productconfig() {
 
 function Text() {
   return (
-    <div className="lg:flex text-black bg-[#FBFAF9] w-full  justify-center items-start overflow-hidden px-4 dark:text-gray-100 mt-24  ">
+    <div className="lg:flex text-black bg-[#FBFAF9] w-full  justify-center items-start overflow-hidden px-4 dark: bg-gray-900 dark:text-gray-100 mt-24  ">
       <div className="w-full  mx-auto text-center md:text-left ">
         <div className="  lg:py-24 lg:px-8">
           <div className=" lg:flex lg:justify-end">
