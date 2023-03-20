@@ -4,6 +4,8 @@ import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
 import { GlobalStatusContextProvider } from "../Context/status";
 import { useRouter } from "next/router";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 // import Loading from "../components/Loading";
 function MyApp({ Component, pageProps }) {
   // const [loading, setLoading] = useState(true);
@@ -19,7 +21,10 @@ function MyApp({ Component, pageProps }) {
     <AnimatePresence exitBeforeEnter>
       <ThemeProvider defaultTheme="light" attribute="class">
         <GlobalStatusContextProvider>
+          <Navbar />
+
           <Component {...pageProps} />
+          <Footer />
         </GlobalStatusContextProvider>
       </ThemeProvider>
     </AnimatePresence>

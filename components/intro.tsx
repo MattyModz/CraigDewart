@@ -1,21 +1,46 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import userData from "../constants/data";
 import Link from "next/link";
+import { useGlobalContext } from "../Context/status";
+
 function Intro() {
+  const { scrollY } = useGlobalContext();
+
+  const logoVariants = {
+    initial: {
+      scale: 1,
+      opacity: 1,
+    },
+    animate: {
+      scale: 0.7,
+      opacity: 0.95,
+      x: -70,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
   return (
     <div className="bg-[#FBFAF9] dark:bg-gray-900 dark:text-gray-100 grid lg:grid-cols-2 py-24 px-8">
       <div className=" lg:flex lg:justify-end">
         {" "}
-        <div className="items ">
-          <div className="flex ">
+        <div className="relative">
+          <motion.div
+            className="logo-container"
+            variants={logoVariants}
+            initial="initial"
+            animate={scrollY > 15 ? "animate" : "initial"}
+          >
             <Image
-              src={"/AvatarImage.png"}
+              src={"/AvatarImage.webp"}
               height={100}
               width={100}
               className="rounded-full "
             />
-          </div>
+          </motion.div>
           <h1 className="font-bold text-4xl py-4">Fullstack on the Jamstack</h1>
           <p className="">Hi, i'm Matt, a fullstack web developer.</p>
           <div className="flex  py-4 ">

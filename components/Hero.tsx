@@ -79,12 +79,19 @@ function This(userDatainst) {
                     href={userDatainst}
                     className="text-base font-normal text-gray-600 dark:text-gray-400"
                   >
-                    <div className="grid grid-cols-4 gap-3">
+                    <div className="grid grid-cols-5 gap-3">
                       <Image
                         src={"/nextjs-13.svg"}
                         height={40}
                         width={40}
                         className="rounded-full px-2 rounded-full bg-white p-2 "
+                      />
+                      <Image
+                        src={"/typescript.svg"}
+                        height={40}
+                        width={40}
+                        className="px-2   p-2 "
+                        alt="typescript"
                       />
 
                       <Image
@@ -92,18 +99,22 @@ function This(userDatainst) {
                         height={40}
                         width={40}
                         className="rounded-full p-2"
+                        alt="react logo"
                       />
+
                       <Image
                         src={"/threejs-1.svg"}
                         height={40}
                         width={40}
-                        className=" rounded-full bg-white p-2 "
+                        className="  bg-white dark:rounded-full dark:bg-white p-2 "
+                        alt="threejs logo"
                       />
                       <Image
                         src={"/tailwind-css-2.svg"}
                         height={40}
                         width={40}
                         className="rounded-full "
+                        alt="tailwind logo"
                       />
                     </div>
                   </a>
@@ -207,7 +218,7 @@ function This1(userDatainst) {
                     href={userDatainst}
                     className="text-base font-normal text-gray-600 dark:text-gray-400"
                   >
-                    <div className="grid grid-cols-6 gap-4">
+                    <div className="grid grid-cols-7 gap-4">
                       <Image
                         src={"/nextjs-13.svg"}
                         height={40}
@@ -216,12 +227,18 @@ function This1(userDatainst) {
                           "
                         alt="nextjs logo"
                       />
-
+                      <Image
+                        src={"/typescript.svg"}
+                        height={40}
+                        width={40}
+                        className="px-2   p-2 "
+                        alt="typescript"
+                      />
                       <Image
                         src={"/prisma-2.svg"}
                         height={40}
                         width={40}
-                        className="rounded-full rounded-full bg-white  "
+                        className="  dark:bg-white dark:rounded-full "
                         alt="prisma logo"
                       />
                       <Image
@@ -235,21 +252,21 @@ function This1(userDatainst) {
                         src={"/postgresql.svg"}
                         height={40}
                         width={40}
-                        className="rounded-full "
+                        className=" "
                         alt="postgres logo"
                       />
                       <Image
                         src={"/nodejs-icon.svg"}
                         height={40}
                         width={40}
-                        className="rounded-full "
+                        className=" "
                         alt="Nodejs logo"
                       />
                       <Image
                         src={"/auth0.svg"}
                         height={40}
                         width={40}
-                        className="rounded-full "
+                        className=" "
                         alt="Auth0 logo"
                       />
                     </div>
@@ -359,13 +376,20 @@ function This2(userDatainst) {
                     href={userDatainst}
                     className="text-base font-normal text-gray-600 dark:text-gray-400"
                   >
-                    <div className="grid grid-cols-5 gap-4">
+                    <div className="grid grid-cols-6 gap-4">
                       <Image
                         src={"/nextjs-13.svg"}
                         height={40}
                         width={40}
                         className="rounded-full rounded-full bg-white p-2  "
                         alt="nextjs logo"
+                      />
+                      <Image
+                        src={"/typescript.svg"}
+                        height={40}
+                        width={40}
+                        className="px-2   p-2 "
+                        alt="typescript"
                       />
                       <Image
                         src={"/react-2.svg"}
@@ -392,7 +416,7 @@ function This2(userDatainst) {
                         src={"/nodejs-icon.svg"}
                         height={40}
                         width={40}
-                        className="rounded-full "
+                        className=" "
                         alt="Nodejs logo"
                       />
                     </div>

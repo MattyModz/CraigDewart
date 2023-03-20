@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import userData from "../constants/data";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useGlobalContext } from "../Context/status";
 
 export default function Navbar() {
   const router = useRouter();
@@ -12,7 +13,7 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const [scrollY, setScrollY] = useState(0);
+  const { scrollY, setScrollY } = useGlobalContext();
   const [bgColor, setBgColor] = useState("bg-gray-50");
 
   useEffect(() => {

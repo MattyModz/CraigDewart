@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ContainerBlock from "../components/ContainerBlock";
+
 import Experience from "../components/Expirience";
 import Link from "next/link";
 
@@ -8,25 +8,20 @@ import Strategy from "../components/Multi-step-form";
 export default function productconfig() {
   return (
     <>
-      <ContainerBlock
-        title="product-config"
-        description="Matthew wynne personal portfolio site."
-      >
-        <div className="grid lg:grid-cols-2">
-          <div className="bg-[#FBFAF9]">
-            {" "}
-            <Text />
+      <div className="grid lg:grid-cols-2">
+        <div className="bg-[#FBFAF9]">
+          {" "}
+          <Text />
+        </div>
+        <div className="h-screen bg-[#FBFAF9] py-24 px-4 ">
+          <div className=" h-1/2 container">
+            <Experience />
           </div>
-          <div className="h-screen bg-[#FBFAF9] py-24 px-4 ">
-            <div className=" h-1/2 container">
-              <Experience />
-            </div>
-            <div className="">
-              <Strategy />
-            </div>
+          <div className="">
+            <Strategy />
           </div>
         </div>
-      </ContainerBlock>
+      </div>
     </>
   );
 }

@@ -17,6 +17,8 @@ interface ContextProps {
   setIM: Dispatch<SetStateAction<string>>;
   isButtonClicked: boolean;
   setIsButtonClicked: Dispatch<SetStateAction<boolean>>;
+  scrollY: Number;
+  setScrollY: Dispatch<SetStateAction<Number>>;
 }
 
 const GlobalStatusContext = createContext<ContextProps>({
@@ -30,6 +32,8 @@ const GlobalStatusContext = createContext<ContextProps>({
   setIsButtonClicked: (): boolean => true,
   IM: "",
   setIM: (): string => "",
+  scrollY: 0,
+  setScrollY: (): Number => 0,
 });
 
 export const GlobalStatusContextProvider = ({ children }) => {
@@ -38,6 +42,7 @@ export const GlobalStatusContextProvider = ({ children }) => {
   const [tab, setTab] = useState("Door");
   const [IM, setIM] = useState("Doorhandle");
   const [isButtonClicked, setIsButtonClicked] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
   return (
     <GlobalStatusContext.Provider
       value={{
@@ -51,6 +56,8 @@ export const GlobalStatusContextProvider = ({ children }) => {
         setIsButtonClicked,
         IM,
         setIM,
+        scrollY,
+        setScrollY,
       }}
     >
       {children}

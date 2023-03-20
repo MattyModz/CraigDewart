@@ -1,17 +1,12 @@
 import React from "react";
-import ContainerBlock from "../components/ContainerBlock";
+
 import Image from "next/image";
 import Link from "next/link";
 export default function sanitypagebuilder() {
   return (
     <>
       <div className="bg-[#FBFAF9] dark:bg-gray-900">
-        <ContainerBlock
-          title="Sanity Page Builder"
-          description="Matthew wynne personal portfolio site."
-        >
-          <This2 />
-        </ContainerBlock>
+        <This2 />
       </div>
     </>
   );
