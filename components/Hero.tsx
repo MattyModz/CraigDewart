@@ -61,7 +61,7 @@ function This(userDatainst) {
               {" "}
               <div className="items ">
                 <div className="  rounded-xl ">
-                  <div className="flex py-2">
+                  <div className="flex lg:py-0 py-2">
                     <p className="bg-gray-100 px-3 rounded-xl font-semibold dark:text-gray-900">
                       Concept
                     </p>
@@ -114,7 +114,7 @@ function This(userDatainst) {
                 </p>
                 <div className="w-1/2 py-4">
                   {" "}
-                  <Link href="/product-config">
+                  <Link href="/product-configurator">
                     <a className="mb-20 md:mb-0 lg:px-8 px-4 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700 ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -191,7 +191,7 @@ function This1(userDatainst) {
                   className="rounded-full "
                 />
               </div> */}
-                <div className="flex py-2">
+                <div className="flex lg:py-0 py-2">
                   <p className="bg-gray-100 px-3 rounded-xl font-semibold dark:text-gray-900">
                     Production
                   </p>
@@ -200,7 +200,7 @@ function This1(userDatainst) {
                   Full stack Lead Management <br />
                   Dahsboard
                 </h1>
-                <p className="text-left">NextJS, Postgres, Prisma</p>
+                <p className="text-left">NextJS, Postgres, Prisma, Auth0</p>
                 <div className="flex  py-4 ">
                   {" "}
                   <a
@@ -210,8 +210,8 @@ function This1(userDatainst) {
                     <div className="grid grid-cols-6 gap-4">
                       <Image
                         src={"/nextjs-13.svg"}
-                        height={50}
-                        width={50}
+                        height={40}
+                        width={40}
                         className="rounded-full bg-white 
                           "
                         alt="nextjs logo"
@@ -233,15 +233,15 @@ function This1(userDatainst) {
                       />
                       <Image
                         src={"/postgresql.svg"}
-                        height={45}
-                        width={45}
+                        height={40}
+                        width={40}
                         className="rounded-full "
                         alt="postgres logo"
                       />
                       <Image
                         src={"/nodejs-icon.svg"}
-                        height={35}
-                        width={35}
+                        height={40}
+                        width={40}
                         className="rounded-full "
                         alt="Nodejs logo"
                       />
@@ -255,9 +255,9 @@ function This1(userDatainst) {
                     </div>
                   </a>
                 </div>
-                <p className="text-left">
+                <p className="text-left ">
                   Postgres CRUD CRM dashboard app for lead generation company-{" "}
-                  <br />
+                  <br className="lg:flex hidden" />
                   lead management, and lead tracking. Integrated email & SMS
                   messaging.
                   <br /> User account authentication with privliges and
@@ -344,7 +344,7 @@ function This2(userDatainst) {
                   className="rounded-full "
                 />
               </div> */}
-                <div className="flex py-2">
+                <div className="flex lg:py-0 py-2">
                   <p className="bg-gray-100 px-3 rounded-xl font-semibold dark:text-gray-900">
                     Production
                   </p>
