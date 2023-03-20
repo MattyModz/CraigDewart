@@ -64,8 +64,8 @@ function This(userDatainst) {
               {" "}
               <div className="items ">
                 <div className="  rounded-xl ">
-                  <div className="flex">
-                    <p className="bg-gray-100 px-3 rounded-xl font-semibold">
+                  <div className="flex py-2">
+                    <p className="bg-gray-100 px-3 rounded-xl font-semibold dark:text-gray-900">
                       Concept
                     </p>
                   </div>
@@ -86,7 +86,7 @@ function This(userDatainst) {
                         src={"/nextjs-13.svg"}
                         height={40}
                         width={40}
-                        className="rounded-full px-2 "
+                        className="rounded-full px-2 rounded-full bg-white p-2 "
                       />
 
                       <Image
@@ -99,7 +99,7 @@ function This(userDatainst) {
                         src={"/threejs-1.svg"}
                         height={40}
                         width={40}
-                        className="rounded-full "
+                        className=" rounded-full bg-white p-2 "
                       />
                       <Image
                         src={"/tailwind-css-2.svg"}
@@ -193,8 +193,8 @@ function This1(userDatainst) {
                   className="rounded-full "
                 />
               </div> */}
-                <div className="flex">
-                  <p className="bg-gray-100 px-3 rounded-xl font-semibold">
+                <div className="flex py-2">
+                  <p className="bg-gray-100 px-3 rounded-xl font-semibold dark:text-gray-900">
                     Production
                   </p>
                 </div>
@@ -214,21 +214,16 @@ function This1(userDatainst) {
                         src={"/nextjs-13.svg"}
                         height={50}
                         width={50}
-                        className="rounded-full  "
+                        className="rounded-full bg-white 
+                          "
                         alt="nextjs logo"
                       />
-                      <Image
-                        src={"/react-2.svg"}
-                        height={40}
-                        width={40}
-                        className="rounded-full p-2"
-                        alt="react logo"
-                      />
+
                       <Image
                         src={"/prisma-2.svg"}
                         height={40}
                         width={40}
-                        className="rounded-full "
+                        className="rounded-full rounded-full bg-white  "
                         alt="prisma logo"
                       />
                       <Image
@@ -247,20 +242,28 @@ function This1(userDatainst) {
                       />
                       <Image
                         src={"/nodejs-icon.svg"}
+                        height={35}
+                        width={35}
+                        className="rounded-full "
+                        alt="Nodejs logo"
+                      />
+                      <Image
+                        src={"/auth0.svg"}
                         height={40}
                         width={40}
                         className="rounded-full "
-                        alt="Nodejs logo"
+                        alt="Auth0 logo"
                       />
                     </div>
                   </a>
                 </div>
                 <p className="text-left">
-                  Lead generation dashboard app writing to a postgres database.
+                  Postgres CRUD CRM dashboard app for lead generation company-{" "}
                   <br />
-                  Full CRM, with lead generation, lead management, and lead
-                  tracking. <br />
-                  Integrated email and SMS messaging.
+                  lead management, and lead tracking. Integrated email & SMS
+                  messaging.
+                  <br /> User account authentication with privliges and
+                  monitoring.
                 </p>
                 <div className="w-1/2 py-4">
                   {" "}
@@ -343,8 +346,8 @@ function This2(userDatainst) {
                   className="rounded-full "
                 />
               </div> */}
-                <div className="flex">
-                  <p className="bg-gray-100 px-3 rounded-xl font-semibold">
+                <div className="flex py-2">
+                  <p className="bg-gray-100 px-3 rounded-xl font-semibold dark:text-gray-900">
                     Production
                   </p>
                 </div>
@@ -363,7 +366,7 @@ function This2(userDatainst) {
                         src={"/nextjs-13.svg"}
                         height={40}
                         width={40}
-                        className="rounded-full  "
+                        className="rounded-full rounded-full bg-white p-2  "
                         alt="nextjs logo"
                       />
                       <Image
