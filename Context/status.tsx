@@ -1,45 +1,43 @@
-'use client'
-
 import {
   createContext,
   useContext,
   Dispatch,
   SetStateAction,
   useState,
-} from 'react'
+} from "react";
 
 interface ContextProps {
-  color: string
-  setColor: Dispatch<SetStateAction<string>>
-  door: string
-  setDoor: Dispatch<SetStateAction<string>>
-  tab: string
-  setTab: Dispatch<SetStateAction<string>>
-  IM: string
-  setIM: Dispatch<SetStateAction<string>>
-  isButtonClicked: boolean
-  setIsButtonClicked: Dispatch<SetStateAction<boolean>>
+  color: string;
+  setColor: Dispatch<SetStateAction<string>>;
+  door: string;
+  setDoor: Dispatch<SetStateAction<string>>;
+  tab: string;
+  setTab: Dispatch<SetStateAction<string>>;
+  IM: string;
+  setIM: Dispatch<SetStateAction<string>>;
+  isButtonClicked: boolean;
+  setIsButtonClicked: Dispatch<SetStateAction<boolean>>;
 }
 
 const GlobalStatusContext = createContext<ContextProps>({
-  color: '',
-  setColor: (): string => '',
-  door: '',
-  setDoor: (): string => '',
-  tab: '',
-  setTab: (): string => '',
+  color: "",
+  setColor: (): string => "",
+  door: "",
+  setDoor: (): string => "",
+  tab: "",
+  setTab: (): string => "",
   isButtonClicked: false,
   setIsButtonClicked: (): boolean => true,
-  IM: '',
-  setIM: (): string => '',
-})
+  IM: "",
+  setIM: (): string => "",
+});
 
 export const GlobalStatusContextProvider = ({ children }) => {
-  const [color, setColor] = useState('')
-  const [door, setDoor] = useState('contemporary')
-  const [tab, setTab] = useState('Door')
-  const [IM, setIM] = useState('Doorhandle')
-  const [isButtonClicked, setIsButtonClicked] = useState(false)
+  const [color, setColor] = useState("");
+  const [door, setDoor] = useState("contemporary");
+  const [tab, setTab] = useState("Door");
+  const [IM, setIM] = useState("Doorhandle");
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
   return (
     <GlobalStatusContext.Provider
       value={{
@@ -57,7 +55,7 @@ export const GlobalStatusContextProvider = ({ children }) => {
     >
       {children}
     </GlobalStatusContext.Provider>
-  )
-}
+  );
+};
 
-export const useGlobalContext = () => useContext(GlobalStatusContext)
+export const useGlobalContext = () => useContext(GlobalStatusContext);

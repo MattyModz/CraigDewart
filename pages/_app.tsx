@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 // import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
-
+import { GlobalStatusContextProvider } from "../Context/status";
 import { useRouter } from "next/router";
 // import Loading from "../components/Loading";
 function MyApp({ Component, pageProps }) {
@@ -18,7 +18,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <AnimatePresence exitBeforeEnter>
       <ThemeProvider defaultTheme="light" attribute="class">
-        <Component {...pageProps} />
+        <GlobalStatusContextProvider>
+          <Component {...pageProps} />
+        </GlobalStatusContextProvider>
       </ThemeProvider>
     </AnimatePresence>
   );
