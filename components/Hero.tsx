@@ -19,9 +19,6 @@ function Hero() {
           spaceBetween={0}
           centeredSlides={true}
           loop={true}
-          pagination={{
-            clickable: true,
-          }}
           autoplay={{
             delay: 7500,
             disableOnInteraction: false,
@@ -69,6 +66,7 @@ function This(userDatainst) {
                       Concept
                     </p>
                   </div>
+                  {/* <li className="rounded-full bg-orange-400"></li> */}
                 </div>
 
                 <h1 className="font-bold text-4xl py-4 text-left">
