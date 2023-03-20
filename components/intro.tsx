@@ -14,9 +14,9 @@ function Intro() {
       opacity: 1,
     },
     animate: {
-      scale: 0.7,
+      scale: 0.85,
       opacity: 0.95,
-      x: -70,
+      x: -30,
       transition: {
         duration: 0.5,
         ease: "easeInOut",
