@@ -17,7 +17,7 @@ export default function productconfig() {
           <div className=" h-1/2 container">
             <Experience />
           </div>
-          <div className="">
+          <div className="container">
             <Strategy />
           </div>
         </div>

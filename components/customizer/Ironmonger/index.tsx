@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import React from "react";
 import { useGlobalContext } from "../../../Context/status";
+import { Tab } from "@headlessui/react";
 function Ironmongery() {
   const [selected, setSelected] = useState(0);
   const { IM, setIM } = useGlobalContext();
@@ -19,7 +20,40 @@ function Ironmongery() {
   };
   return (
     <motion.section>
-      <div className=" flex   overflow-auto lg:max-w-none lg:grid-cols-3 ">
+      <Tab.Group as="div" className="  ">
+        {({ selectedIndex }) => (
+          <>
+            <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 ">
+              <Tab.List className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 font-semibold sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
+                {datadoors.map((el, i) => (
+                  <div className=" " key={i}>
+                    <motion.div
+                      className={`space-between mx-2 flex rounded-xl dark:bg-opacity-100  bg-opacity-25 dark:opacity-100 opacity-50 md:m-2 ${
+                        selected === i && "cardselect "
+                      }`}
+                      onClick={() => setSelected(i)}
+                    >
+                      <motion.div className="   ">
+                        <input
+                          className="bg-cover "
+                          type="image"
+                          src={el.img}
+                          alt={el.alt}
+                          name="submitwwS"
+                          height={200}
+                          width={200}
+                          onClick={(event) => handleImageClick(event, i)}
+                        />
+                      </motion.div>
+                    </motion.div>
+                  </div>
+                ))}
+              </Tab.List>
+            </div>
+          </>
+        )}
+      </Tab.Group>
+      {/* <div className=" lg:flex   overflow-auto lg:max-w-none lg:grid-cols-3 hidden  ">
         {datadoors.map((el, i) => (
           <div className=" " key={i}>
             <motion.div
@@ -43,7 +77,7 @@ function Ironmongery() {
             </motion.div>
           </div>
         ))}
-      </div>
+      </div> */}
     </motion.section>
   );
 }
