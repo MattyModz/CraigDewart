@@ -102,7 +102,7 @@ function Lead() {
                   <br /> User account authentication with privliges and
                   monitoring.
                 </p>
-                <div className="w-1/2 py-4">
+                <div className="lg:w-1/2 py-4">
                   {" "}
                   <Link href="/lead-dashboard">
                     <a className="mb-20 md:mb-0 lg:px-8 px-4 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700 ">
