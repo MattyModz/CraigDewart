@@ -1,17 +1,17 @@
-'use client'
-import { useState } from 'react'
-import { useMultistepform } from './multisteps'
-import { motion } from 'framer-motion'
-import Customizer from '../customizer'
+"use client";
+import { useState } from "react";
+import { useMultistepform } from "./multisteps";
+import { motion } from "framer-motion";
+import Customizer from "../customizer";
 
 const INITIAL_DATA = {
-  Door: '',
-}
+  Door: "",
+};
 
 export default function Strategy() {
-  const [data, setData] = useState(INITIAL_DATA)
+  const [data, setData] = useState(INITIAL_DATA);
 
-  const [formStatus, setFormStatus] = useState(false)
+  const [formStatus, setFormStatus] = useState(false);
 
   // useEffect(() => {
   //   formStatus === true
@@ -24,8 +24,8 @@ export default function Strategy() {
 
   function updateFields(fields) {
     setData((prev) => {
-      return { ...prev, ...fields }
-    })
+      return { ...prev, ...fields };
+    });
   }
   //  <Intro {...data} updateFields={updateFields} />,
   const { currentStepIndex, step, isFirstStep, isLastStep, back, next } =
@@ -34,11 +34,11 @@ export default function Strategy() {
       // <Colourdoor {...data} updateFields={updateFields} key={data} />,
 
       // <Book {...data} updateFields={updateFields} key={data} />,
-    ])
+    ]);
 
   function onSubmit(e) {
-    e.preventDefault()
-    if (!isLastStep) return next()
+    e.preventDefault();
+    if (!isLastStep) return next();
     // setQuestions(false);
     // setShowModal(true);
 
@@ -121,5 +121,5 @@ export default function Strategy() {
         </form>
       </section>
     </>
-  )
+  );
 }

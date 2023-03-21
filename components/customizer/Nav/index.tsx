@@ -26,7 +26,7 @@ export default function Doorpartnav() {
   };
 
   return (
-    <div>
+    <div className="">
       <div className=" pb-8 ">
         <div className="border-b  border-gray-200">
           <nav className="-mb-px flex" aria-label="Tabs">
@@ -36,7 +36,7 @@ export default function Doorpartnav() {
                 onClick={() => handleTabClick(tab.name, i)}
                 className={classNames(
                   activeTab === i
-                    ? "border-indigo-500 text-indigo-600"
+                    ? "border-[#FA9D22] text-black dark:text-white"
                     : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
                   "w-1/4 border-b-2 py-4 px-1 text-center text-sm font-medium"
                 )}

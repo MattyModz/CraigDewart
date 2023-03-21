@@ -13,7 +13,7 @@ export default function productconfig() {
           {" "}
           <Text />
         </div>
-        <div className="h-screen bg-[#FBFAF9] py-24 px-4 ">
+        <div className="h-screen dark:bg-gray-900 bg-[#FBFAF9] py-24 px-4 ">
           <div className=" h-1/2 container">
             <Experience />
           </div>
@@ -28,7 +28,7 @@ export default function productconfig() {
 
 function Text() {
   return (
-    <div className="lg:flex text-black bg-[#FBFAF9] w-full  justify-center items-start overflow-hidden px-4 dark: bg-gray-900 dark:text-gray-100 mt-24  ">
+    <div className="lg:flex text-black bg-[#FBFAF9] w-full  justify-center items-start overflow-hidden px-4 dark:bg-gray-900 dark:text-gray-100 mt-24  ">
       <div className="w-full  mx-auto text-center md:text-left ">
         <div className="  lg:py-24 lg:px-8">
           <div className=" lg:flex lg:justify-end">
@@ -58,7 +58,7 @@ function Text() {
                       src={"/nextjs-13.svg"}
                       height={40}
                       width={40}
-                      className="rounded-full px-2 rounded-full bg-white p-2 "
+                      className="rounded-full px-2 rounded-full dark:bg-white p-2 "
                     />
 
                     <Image
@@ -71,7 +71,7 @@ function Text() {
                       src={"/threejs-1.svg"}
                       height={40}
                       width={40}
-                      className=" rounded-full bg-white p-2 "
+                      className=" dark:rounded-full dark:bg-white  "
                     />
                     <Image
                       src={"/tailwind-css-2.svg"}
@@ -88,7 +88,7 @@ function Text() {
               </p>
               <div className="w-1/2 py-4">
                 {" "}
-                <Link href="/product-configurator">
+                <Link href="https://github.com/MattyModz/ProductConfigurator">
                   <a className="mb-20 md:mb-0 lg:px-8 px-4 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

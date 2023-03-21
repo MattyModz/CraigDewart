@@ -32,7 +32,7 @@ function Intro() {
             className="logo-container"
             variants={logoVariants}
             initial="initial"
-            animate={scrollY > 15 ? "animate" : "initial"}
+            animate={scrollY > 0 ? "animate" : "initial"}
           >
             <Image
               src={"/AvatarImage.webp"}
