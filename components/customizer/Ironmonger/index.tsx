@@ -9,8 +9,8 @@ function Ironmongery() {
   console.log(IM);
 
   const datadoors = [
-    { img: "", type: "Doorhandle", alt: "Doorhandle" },
-    { img: "", type: "Doorknob", alt: "Doorknob" },
+    { img: "/Static/doorhandle.webp", type: "Doorhandle", alt: "Doorhandle" },
+    { img: "/Static/doorknob.webp", type: "Doorknob", alt: "Doorknob" },
   ];
 
   const handleImageClick = (event, i) => {
@@ -23,14 +23,14 @@ function Ironmongery() {
         {datadoors.map((el, i) => (
           <div className=" " key={i}>
             <motion.div
-              className={`space-between flex rounded-xl bg-black bg-opacity-25 opacity-50 md:m-2 ${
+              className={`space-between mx-2 flex rounded-xl dark:bg-opacity-100  bg-opacity-25 dark:opacity-100 opacity-50 md:m-2 ${
                 selected === i && "cardselect "
               }`}
               onClick={() => setSelected(i)}
             >
               <motion.div className="   ">
                 <input
-                  className="bg-cover"
+                  className="bg-cover "
                   type="image"
                   src={el.img}
                   alt={el.alt}

@@ -13,7 +13,7 @@ export default function productconfig() {
           {" "}
           <Text />
         </div>
-        <div className="h-screen dark:bg-gray-900 bg-[#FBFAF9] lg:py-24 px-4 ">
+        <div className=" dark:bg-gray-900 bg-[#FBFAF9] lg:py-24 px-4 ">
           <div className=" h-1/2 container">
             <Experience />
           </div>

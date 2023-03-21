@@ -102,7 +102,7 @@ function Colourdoor(updateFields) {
   return (
     <>
       <motion.div
-        className="flex cursor-pointer overflow-auto lg:max-w-none lg:grid-cols-3"
+        className="flex cursor-pointer overflow-auto lg:max-w-none lg:grid-cols-3 py-4 "
         initial={{ opacity: 0, y: -20 }}
         whileInView={{
           opacity: 1,
@@ -120,7 +120,7 @@ function Colourdoor(updateFields) {
               onClick={() => handleColorChange(i)}
               style={{ backgroundColor: el.color }}
             >
-              <motion.div className="flex h-20 w-20 items-center justify-center rounded-full text-center">
+              <motion.div className="flex h-20 w-20 items-center justify-center rounded-full text-center dark:text-black">
                 {color === el.color ? `${el.colorName}` : ""}
               </motion.div>
             </motion.div>
