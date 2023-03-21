@@ -14,7 +14,7 @@ export default function productconfig() {
           <Text />
         </div>
         <div className=" dark:bg-gray-900 bg-[#FBFAF9] lg:py-24 px-4 ">
-          <div className="lg:h-1/2 h-2/3 container">
+          <div className=" lg:h-1/2 h-2/3 container ">
             <Experience />
           </div>
           <div className="container">
@@ -22,6 +22,7 @@ export default function productconfig() {
           </div>
         </div>
       </div>
+      <Write />
     </>
   );
 }
@@ -114,6 +115,35 @@ function Text() {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function Write() {
+  return (
+    <div className=" bg-[#FBFAF9] dark:bg-gray-900 dark-text-gray-50 px-4  grid lg:grid-cols-3 ">
+      <div></div>
+      <div>
+        {" "}
+        <div className="flex">
+          {" "}
+          <p className="bg-gray-100 px-3 rounded-xl font-semibold dark:text-gray-900">
+            Product configurator
+          </p>
+        </div>
+        <div>
+          {" "}
+          <p className="py-4">
+            Concept piece exploring Three js and React three fiber. Originally
+            designed as a test piece for Agored doors a brand in the the Marche
+            business Group, Looking to explore methods for creating exciting and
+            engaging purchasing expiriences for their Ironmongery and premium
+            door products.
+            <br />
+          </p>
+        </div>
+      </div>
+      <div></div>
     </div>
   );
 }
