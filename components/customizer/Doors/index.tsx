@@ -25,35 +25,8 @@ export default function Doorcard(updateFields) {
   return (
     <>
       <motion.section>
-        <div className=" flex   overflow-auto lg:max-w-none lg:grid-cols-3 ">
-          {datadoors.map((el, i) => (
-            <div className=" " key={i}>
-              <motion.div
-                className={`space-between flex rounded-xl bg-black bg-opacity-25 opacity-50 md:m-2 ${
-                  selected === i && "cardselect "
-                }`}
-                onClick={() => setSelected(i)}
-              >
-                <motion.div className="   ">
-                  <input
-                    className="bg-cover"
-                    type="image"
-                    src={el.img}
-                    alt={el.alt}
-                    name="submitwwS"
-                    height={200}
-                    width={200}
-                    onClick={(event) => handleImageClick(event, i)}
-                    // value={el.img}
-                    // onChange={(e) => updateFields({ img: e.target.value })}
-                  />
-                  {/* <button onClick={() => setDataValue([i])}>
-                 <Image src={el.img} width={500} height={250} alt={'img'} /> 
-              </button> */}
-                </motion.div>
-              </motion.div>
-            </div>
-          ))}
+        <div className=" flex   overflow-auto lg:max-w-none  ">
+          <Colourdoor />
 
           {/* <input
         type="text"
@@ -66,7 +39,6 @@ export default function Doorcard(updateFields) {
         onChange={(e) => updateFields({ Name: e.target.value })}
       /> */}
         </div>
-        {isButtonClicked && door !== "" && <Colourdoor />}
       </motion.section>
 
       {/* <button
@@ -161,4 +133,35 @@ function Colourdoor(updateFields) {
 //       )}
 //     </Tab.Group>
 //   )
+// }
+
+// {
+//   datadoors.map((el, i) => (
+//     <div className=" " key={i}>
+//       <motion.div
+//         className={`space-between flex rounded-xl bg-black bg-opacity-25 opacity-50 md:m-2 ${
+//           selected === i && "cardselect "
+//         }`}
+//         onClick={() => setSelected(i)}
+//       >
+//         <motion.div className="   ">
+//           <input
+//             className="bg-cover"
+//             type="image"
+//             src={el.img}
+//             alt={el.alt}
+//             name="submitwwS"
+//             height={200}
+//             width={200}
+//             onClick={(event) => handleImageClick(event, i)}
+//             // value={el.img}
+//             // onChange={(e) => updateFields({ img: e.target.value })}
+//           />
+//           {/* <button onClick={() => setDataValue([i])}>
+//                <Image src={el.img} width={500} height={250} alt={'img'} />
+//             </button> */}
+//         </motion.div>
+//       </motion.div>
+//     </div>
+//   ));
 // }

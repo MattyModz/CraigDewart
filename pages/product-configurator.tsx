@@ -14,7 +14,7 @@ export default function productconfig() {
           <Text />
         </div>
         <div className=" dark:bg-gray-900 bg-[#FBFAF9] lg:py-24 px-4 ">
-          <div className=" h-1/2 container">
+          <div className="lg:h-1/2 h-2/3 container">
             <Experience />
           </div>
           <div className="container">
@@ -83,8 +83,9 @@ function Text() {
                 </a>
               </div>
               <p className="text-left">
-                Initial concept piece demonstrating core functionality <br /> to
-                a headless eccomerce product configurator
+                Initial concept piece demonstrating core functionality <br />{" "}
+                for a headless eccomerce product configurator.
+                <br /> Utilising Typescript, React three fiber and NextJS.
               </p>
               <div className="w-1/2 py-4">
                 {" "}
