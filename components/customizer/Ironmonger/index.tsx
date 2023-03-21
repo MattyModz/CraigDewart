@@ -2,14 +2,16 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import React from "react";
-import { useGlobalContext } from "../../../Context/status";
 import { Tab } from "@headlessui/react";
+import { useGlobalContext } from "../../../Context/status";
 function Ironmongery() {
   const [selected, setSelected] = useState(0);
   const { IM, setIM } = useGlobalContext();
   console.log(IM);
 
   const datadoors = [
+    { img: "/Static/doorhandle.webp", type: "Doorhandle", alt: "Doorhandle" },
+    { img: "/Static/doorknob.webp", type: "Doorknob", alt: "Doorknob" },
     { img: "/Static/doorhandle.webp", type: "Doorhandle", alt: "Doorhandle" },
     { img: "/Static/doorknob.webp", type: "Doorknob", alt: "Doorknob" },
   ];
@@ -20,7 +22,7 @@ function Ironmongery() {
   };
   return (
     <motion.section>
-      <Tab.Group as="div" className="  ">
+      <Tab.Group as="div" className="  block lg:hidden">
         {({ selectedIndex }) => (
           <>
             <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 ">
@@ -53,7 +55,7 @@ function Ironmongery() {
           </>
         )}
       </Tab.Group>
-      {/* <div className=" lg:flex   overflow-auto lg:max-w-none lg:grid-cols-3 hidden  ">
+      <div className=" lg:flex   overflow-auto lg:max-w-none lg:grid-cols-3  hidden ">
         {datadoors.map((el, i) => (
           <div className=" " key={i}>
             <motion.div
@@ -77,7 +79,7 @@ function Ironmongery() {
             </motion.div>
           </div>
         ))}
-      </div> */}
+      </div>
     </motion.section>
   );
 }
