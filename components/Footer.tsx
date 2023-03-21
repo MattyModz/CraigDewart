@@ -27,7 +27,7 @@ export default function Footer() {
     <>
       <div className="dark:bg-gray-900 bg-[#FBFAF9]">
         <div className="max-w-6xl  mx-auto px-4 py-5 md:py-10">
-          <div className="flex justify-center bg-[#FBFAF9] ">
+          <div className="flex justify-center bg-[#FBFAF9] dark:bg-gray-900 ">
             {" "}
             <motion.div
               className="logo-container"
