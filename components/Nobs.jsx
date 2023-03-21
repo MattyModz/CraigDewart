@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
-import { useGlobalContext } from "../../app/Context/status";
+import { useGlobalContext } from "../Context/status";
 import * as THREE from "three";
 const Door = (props) => {
   const { nodes, materials } = useGLTF("./model/Door2.gltf");
