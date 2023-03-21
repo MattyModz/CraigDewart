@@ -169,9 +169,9 @@ function Write() {
         <div>
           {" "}
           <p className="py-4">
-            Website design and build with Page and funnel builder utilsing
-            sanity CMS, create feature rich pages blogs and funnels using drag
-            and drop functionality. Allow for fast and effective content
+            Website design and build. NextJS and Sanity CMS, integrated Page and
+            funnel builder, create feature rich pages blogs and funnels using
+            drag and drop functionality. Allow for fast and effective content
             creation by non technical team, in line with brand guidelines.
             <br />
             <br />
