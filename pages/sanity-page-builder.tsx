@@ -8,6 +8,7 @@ export default function sanitypagebuilder() {
       <div className="bg-[#FBFAF9] dark:bg-gray-900">
         <This2 />
       </div>
+      <Write />
     </>
   );
 }
@@ -150,5 +151,34 @@ function This2() {
         </div>
       </div>
     </>
+  );
+}
+
+function Write() {
+  return (
+    <div className=" bg-[#FBFAF9] dark:bg-gray-900 dark-text-gray-50 px-4  grid lg:grid-cols-3 ">
+      <div></div>
+      <div>
+        {" "}
+        <div className="flex">
+          {" "}
+          <p className="bg-gray-100 px-3 rounded-xl font-semibold dark:text-gray-900">
+            Sanity CMS Page builder
+          </p>
+        </div>
+        <div>
+          {" "}
+          <p className="py-4">
+            Website design and build with Page and funnel builder utilsing
+            sanity CMS, create feature rich pages blogs and funnels using drag
+            and drop functionality. Allow for fast and effective content
+            creation by non technical team, in line with brand guidelines.
+            <br />
+            <br />
+          </p>
+        </div>
+      </div>
+      <div></div>
+    </div>
   );
 }

@@ -9,6 +9,7 @@ export default function test() {
           <Lead />
         </div>
       </div>
+      <Write />
     </>
   );
 }
@@ -102,7 +103,7 @@ function Lead() {
                   <br /> User account authentication with privliges and
                   monitoring.
                 </p>
-                <div className="lg:w-1/2 py-4">
+                <div className="lg:w-1/2 w-2/3 py-4">
                   {" "}
                   <Link href="/lead-dashboard">
                     <a className="mb-20 md:mb-0 lg:px-8 px-4 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700 ">
@@ -163,5 +164,35 @@ function Lead() {
         </div>
       </div>
     </>
+  );
+}
+
+function Write() {
+  return (
+    <div className=" bg-[#FBFAF9] dark:bg-gray-900 dark-text-gray-50 px-4  grid lg:grid-cols-3 ">
+      <div></div>
+      <div>
+        {" "}
+        <div className="flex">
+          {" "}
+          <p className="bg-gray-100 px-3 rounded-xl font-semibold dark:text-gray-900">
+            Lead Mangement Dashboard
+          </p>
+        </div>
+        <div>
+          {" "}
+          <p className="py-4">
+            Lead generation CRM app, integrated with submission form on client
+            website. Mange incoming leads across all three stages of process -
+            prospect, lead, and customer. Integrated with email and SMS
+            messaging automations. Manage workflow and assign leads to sales
+            reps with output automations.
+            <br />
+            <br />
+          </p>
+        </div>
+      </div>
+      <div></div>
+    </div>
   );
 }
