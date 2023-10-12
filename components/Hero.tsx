@@ -311,7 +311,7 @@ function This1(userDatainst) {
           <div className=" lg:block relative w-full  ">
             {" "}
             <Image
-              src={"/leadgen.gif"}
+              src={"/produ.gif"}
               alt="avatar"
               className=" shadow flex justify-center   mx-auto "
               width={1000}
